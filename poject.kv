@@ -1,0 +1,18 @@
+Interface :
+    TextInput :
+        id : textInput1
+        size_hint : 0.5,0.1
+        # 0.5 artinya 50%, klo 0.1 artinya 10%
+        pos_hint : {"center_x" : 0.5,"center_y" : 0.6}
+        multiline : False
+    Label :
+        id : label1
+        text : "Kosong"
+        size_hint : 0.5, 0.1
+        pos_hint : {"center_x" : 0.5, "center_y" : 0.5}
+    Button :
+        id : button1
+        text : "Click Me!"
+        size_hint : 0.5, 0.1
+        pos_hint : {"center_x" : 0.5, "center_y" : 0.4}
+        on_release : root.display_information()
